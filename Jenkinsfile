@@ -8,7 +8,7 @@ pipeline{
         }
         stage('w/ docker'){
             agent {
-                image: node:18-alpine
+                image: 'node:18-alpine'
             }
             steps {
                 sh 'echo "With docker"'
